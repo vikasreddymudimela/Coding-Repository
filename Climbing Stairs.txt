@@ -4,3 +4,4 @@ Here The Problem is done through a reverse approch the problems is solved backwa
  for example the ways of reaching from n-1 step to n step is one and ways of reaching n to n is one
  for n-3 step ways are n-2 and n-1 it is dynamic programming 
  because you can take only one step to n-1 and two steps to n-2 and after that the no of ways to reach n are previously computed
+ only two variables one and two are used to find the solution
