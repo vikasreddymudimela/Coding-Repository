@@ -1,0 +1,13 @@
+
+Here The challenge is to add two numbers without using plus or minus
+here the xor and and operators are used to perform addition
+the operations are repated till there is no carry
+while(b!=0){
+            int temp = (a&b)<<1;
+            a=a^b;
+            b = temp;
+        }
+        return a;
+
+        Xor and and is performed till the carry is 0
+        9 = 
