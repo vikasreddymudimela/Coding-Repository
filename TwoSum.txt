@@ -1,0 +1,1 @@
+In the two sum problem we use hashmap but with a twist we add the values of elements only after it is visited this helps to find the solution even if same values exist
