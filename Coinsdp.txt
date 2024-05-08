@@ -1,0 +1,19 @@
+Here the Problem is to find the amount that can be made with least possible coins
+so it is dynamic programming the least possible ways are caluclated using the least coins for previous appraoch
+
+ int[] am = new int[amount+1];
+      for(int j=1;j<am.length;j++){
+        am[j] = amount+1;
+      }
+      am[0]=0;
+      for(int i=1;i<amount+1;i++){
+         for(int j=0;j<coins.length;j++){
+            if(i-coins[j]>=0){
+                am[i] = Math.min(am[i],1+am[i-coins[j]]);
+            }
+         }
+      }
+      if(am[amount]==amount+1){
+        return -1;
+      }
+      return am[amount];
