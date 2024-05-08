@@ -3,3 +3,15 @@ So the simple strategy is to buy low and sell high for maximun profit
 The solution is of a two pointer solution
 you can also use one pointer approach
 The one pointer by chatgpt helps the best
+ 
+        int low = Integer.MAX_VALUE;
+        int MaxProfit=0;
+        for(int price:prices){
+            if(price<low){
+                low=price;
+            }
+            else{
+                MaxProfit = Math.max(price-low,MaxProfit);
+            }
+        }
+        return MaxProfit;
